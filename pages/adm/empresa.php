@@ -1,4 +1,3 @@
-
 <?php
 //session_start();
 include_once("../plantilla_validar.php");
@@ -166,132 +165,133 @@ include_once("../plantilla_validar.php");
 // fin persona
     });
 </script>
+<div class='table-responsive'>
+<div class="box box-danger" style="padding: 10px;">
+    <table id="empresa" class="table table-condensed table-hover" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Razon social</th>
+            <th>RUC</th>
+            <th>Nombre</th>
+            <th>Siglas</th>
+            <th>Direccion</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+            <th>Web</th>
+            <th>Usuario</th>
+            <th>Clave</th>
+            <th>Super Admin</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
 
-        <div class="box box-danger" style="padding: 10px;">
-        <table id="empresa" class="table table-condensed table-hover" width="100%" cellspacing="0">
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>Razon social</th>
-                <th>RUC</th>
-                <th>Nombre</th>
-                <th>Siglas</th>
-                <th>Direccion</th>
-                <th>Correo</th>
-                <th>Telefono</th>
-                <th>Web</th>
-                <th>Usuario</th>
-                <th>Clave</th>
-                <th>Super Admin</th>
-                <th></th>
-            </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-<!--            <tfoot>-->
-<!--            <tr>-->
-<!--                <th>id</th>-->
-<!--                <th>DNI</th>-->
-<!--                <th>Nombres</th>-->
-<!--                <th>Apellido Paterno</th>-->
-<!--                <th>Apellido Materno</th>-->
-<!--                <th>Sexo</th>-->
-<!--                <th></th>-->
-<!--            </tr>-->
-<!--            </tfoot>-->
-        </table>
-    </div>
+        </tbody>
+        <!--            <tfoot>-->
+        <!--            <tr>-->
+        <!--                <th>id</th>-->
+        <!--                <th>DNI</th>-->
+        <!--                <th>Nombres</th>-->
+        <!--                <th>Apellido Paterno</th>-->
+        <!--                <th>Apellido Materno</th>-->
+        <!--                <th>Sexo</th>-->
+        <!--                <th></th>-->
+        <!--            </tr>-->
+        <!--            </tfoot>-->
+    </table>
+</div>
+</div>
 
 
-    <div id="mEmpresa" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Empresa</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="fEmpresa" class="form-horizontal">
-                        <div class="form-group">
-                            <label for="tbRazonSocial" class="col-sm-3 control-label">Razón Social</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbRazonSocial" name="razonsocial" maxlength="50" style="width: 120px">
-                                <input type="hidden" class="form-control" id="tbId" name="id">
-                            </div>
+<div id="mEmpresa" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Empresa</h4>
+            </div>
+            <div class="modal-body">
+                <form id="fEmpresa" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="tbRazonSocial" class="col-sm-3 control-label">Razón Social</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbRazonSocial" name="razonsocial" maxlength="50" style="width: 120px" autofocus>
+                            <input type="hidden" class="form-control" id="tbId" name="id">
                         </div>
-                        <div class="form-group">
-                            <label for="tbRUC" class="col-sm-3 control-label">RUC</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbRUC" name="ruc">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbRUC" class="col-sm-3 control-label">RUC</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbRUC" name="ruc">
                         </div>
-                        <div class="form-group">
-                            <label for="tbNombre" class="col-sm-3 control-label">Nombre Comercial</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbNombre" name="nombre">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbNombre" class="col-sm-3 control-label">Nombre Comercial</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbNombre" name="nombre">
                         </div>
-                        <div class="form-group">
-                            <label for="tbSiglas" class="col-sm-3 control-label">Siglas</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbSiglas" name="siglas">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbSiglas" class="col-sm-3 control-label">Siglas</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbSiglas" name="siglas">
                         </div>
-                        <div class="form-group">
-                            <label for="tbDireccion" class="col-sm-3 control-label">Direccion</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbDireccion" name="direccion">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbDireccion" class="col-sm-3 control-label">Direccion</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbDireccion" name="direccion">
                         </div>
-                        <div class="form-group">
-                            <label for="tbCorreo" class="col-sm-3 control-label">Correo</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbCorreo" name="correo">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbCorreo" class="col-sm-3 control-label">Correo</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="tbCorreo" name="correo">
                         </div>
-                        <div class="form-group">
-                            <label for="tbTelefono" class="col-sm-3 control-label">Telefono</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbTelefono" name="telefono">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbTelefono" class="col-sm-3 control-label">Telefono</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbTelefono" name="telefono">
                         </div>
-                        <div class="form-group">
-                            <label for="tbWeb" class="col-sm-3 control-label">Web</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbWeb" name="web">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbWeb" class="col-sm-3 control-label">Web</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbWeb" name="web">
                         </div>
-                        <div class="form-group">
-                            <label for="tbUsuario" class="col-sm-3 control-label">Usuario</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbUsuario" name="usuario">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbUsuario" class="col-sm-3 control-label">Usuario</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbUsuario" name="usuario">
                         </div>
-                        <div class="form-group">
-                            <label for="tbClave" class="col-sm-3 control-label">Clave</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="tbClave" name="clave">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tbClave" class="col-sm-3 control-label">Clave</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tbClave" name="clave">
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-9">
-                                <input type="hidden" class="form-control" id="tbSuperAdmin" name="superadmin">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-9">
+                            <input type="hidden" class="form-control" id="tbSuperAdmin" name="superadmin">
                         </div>
+                    </div>
 
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-xs-6 text-left">
-                            <button type="reset" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                        </div>
-                        <div class="col-xs-6">
-                            <button type="button" id="btnGuardar" class="btn btn-primary">Guardar</button>
-                        </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <button type="reset" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    </div>
+                    <div class="col-xs-6">
+                        <button type="button" id="btnGuardar" class="btn btn-primary">Guardar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>

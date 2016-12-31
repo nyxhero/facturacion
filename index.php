@@ -134,6 +134,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/waitme/waitme.min.js"></script>
 <script src="plugins/bootbox.min.js"></script>
 <script src="plugins/toastr/toastr.min.js"></script>
+<script src="plugins/toastr/jquery.toast.min.js"></script>
 
 <script src="dist/js/index.js"></script>
 
