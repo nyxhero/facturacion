@@ -1,0 +1,13 @@
+.pointer {
+    cursor: pointer;
+}
+.dt-btn {
+    cursor: pointer;
+    opacity: 0.4;
+}
+.dt-btn:hover {
+    opacity: 1;
+}
+.dataTables_filter label, .dataTables_filter label input {
+    width: 98% !important;
+}
